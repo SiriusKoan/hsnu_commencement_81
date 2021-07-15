@@ -7,7 +7,7 @@ function render_history(THIS, art = null, embed = false) {
         }
         THIS.style.color = "#EED07C";
     }
-    $.getJSON("/history/art_design_log/data.json", function (json) {
+    $.getJSON("/ceremony81/history/art_design_log/data.json", function (json) {
         var data = json[art ? art : document.title];
         if (!embed) {
             var art_class = document.createElement("h1");
